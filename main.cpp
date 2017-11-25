@@ -1,7 +1,8 @@
 #include <iostream>
-#include "src/file_io.h"
+#include "src/process_communication/posix_ipc/message_queue.h"
 
 int main() {
-    go();
+    threatNotify ();
+    std::cout << "-----------------------\n";
     return 0;
 }
