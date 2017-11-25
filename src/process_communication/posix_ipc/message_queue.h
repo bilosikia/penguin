@@ -70,7 +70,7 @@ void go()
     if (md == -1)
     {
         perror("open mq error");
-        return -1;
+        return;
     }
     mq_unlink(mq.c_str());
     switch (fork())
@@ -78,7 +78,7 @@ void go()
     case -1:
     {
         perror("fork error");
-        return -1;
+        return;
     }
     case 0:
     {
@@ -86,7 +86,7 @@ void go()
         registNotify(&md);
         pause();
         mq_close(md);
-        return 0;
+        return;
     }
     default:
     {
@@ -107,7 +107,7 @@ void go()
                 else
                 {
                     perror("send error");
-                    return -1;
+                    return;
                 }
             }
         }
@@ -115,5 +115,5 @@ void go()
         mq_close(md);
     }
     }
-    return 0;
+    return;
 }
