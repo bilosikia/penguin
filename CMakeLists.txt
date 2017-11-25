@@ -11,7 +11,10 @@ set(SOURCE_FILES
     src/process_communication/pipi_fifo/fifo.h 
     src/process_communication/mmp/mmp_file.h 
     src/process_communication/mmp/mmp_anonymouse.h 
-    src/process_communication/posix_ipc/message_queue.h)
+    src/process_communication/posix_ipc/message_queue.h
+    src/process_communication/posix_ipc/sem.h
+    src/process_communication/posix_ipc/share_memory.h)
 
 add_executable(penguin ${SOURCE_FILES})
 target_link_libraries(penguin rt)
+target_link_libraries(penguin pthread)
