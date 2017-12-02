@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/process_communication/posix_ipc/share_memory.h"
+#include "src/process_communication/socket/unix_socket.h"
 
 int main() {
     go();
