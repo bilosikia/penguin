@@ -14,7 +14,8 @@ set(SOURCE_FILES
     src/process_communication/posix_ipc/message_queue.h
     src/process_communication/posix_ipc/sem.h
     src/process_communication/posix_ipc/share_memory.h
-    src/process_communication/socket/unix_socket.h)
+    src/process_communication/socket/unix_socket.h
+    src/process_communication/socket/tcp.h)
 
 add_executable(penguin ${SOURCE_FILES})
 target_link_libraries(penguin rt)

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/process_communication/socket/unix_socket.h"
+#include "src/process_communication/socket/tcp.h"
 
 int main() {
     go();

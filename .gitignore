@@ -67,4 +67,8 @@ fabric.properties
 build/
 Makefile
 CMakeCache.txt
+CMakeFiles/
+make_install.cmake
+cmake_install.cmake
+
 # End of https://www.gitignore.io/api/clion
